@@ -1,6 +1,6 @@
 import { longestPalindrome } from "./longestPalindromicSubstring";
 
-const testExamples = [
+const tests = [
     {
         input: 'babad',
         expected: 'bab'
@@ -28,7 +28,7 @@ const testExamples = [
 ];
 
 describe('--- Longest Palindromic Substring ---', () => {
-    testExamples.map(({input, expected}, idx) => {
+    tests.map(({input, expected}, idx) => {
         it(`Returns ${expected}`, () => {
             expect(longestPalindrome(input)).toBe(expected);
         });
